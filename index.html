@@ -1,74 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>book</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="../components/jquery/jquery.js"></script>
-    <script src="../components/jQuery-Animate-Enhanced/scripts/src/jquery.animate-enhanced.js"></script>
-    <script src="../components/jquery-easing/jquery.easing.js"></script>
-    <script src="../components/jquery-dotimeout/jquery.ba-dotimeout.js"></script>
-    <script src="../components/jquery-throttle-debounce/jquery.ba-throttle-debounce.js"></script>
-    <script src="../components/jquery-hoverIntent/jquery.hoverIntent.js"></script>
-    <script src="../components/lorem/src/library/lorem.js"></script>
-    <script src="../vendor/rAF.js"></script>
-    <script src="./scripts/main.js"></script>
-  </head>
-  <body>
-    <div id="topbar">
-      <ul>
-        <li class="item">One</li>
-        <li class="item">Two</li>
-        <li class="item">Three</li>
-        <li class="item">Four</li>
-        <li class="item">Five</li>
-        <li class="item">Six</li>
-      </ul>
-      <button id="peek">peek</button>
-    </div>
-    <div id="my-card-view">
-      <div class="">
-        <div class="in">
-          <div class="overlay">
-            <h1>One</h1>
-          </div>
-        </div>
-      </div>
-      <div class="">
-        <div class="in">
-          <div class="overlay">
-            <h1>Two</h1>
-          </div>
-        </div>
-      </div>
-      <div class="">
-        <div class="in">
-          <div class="overlay">
-            <h1>Three</h1>
-          </div>
-        </div>
-      </div>
-      <div class="">
-        <div class="in">
-          <div class="overlay">
-            <h1>Four</h1>
-          </div>
-        </div>
-      </div>
-      <div class="">
-        <div class="in">
-          <div class="overlay">
-            <h1>Five</h1>
-          </div>
-        </div>
-      </div>
-      <div class="">
-        <div class="in">
-          <div class="overlay">
-            <h1>Six</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+<!DOCTYPE html><!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]--><!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]--><!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!-- [if gt IE 8] <!-->
+<html lang="en" class="no-js">
+  <!-- <![endif]-->
+  <head></head>
+  <title>book</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./styles/style.css">
 </html>
+<body>
+  <div id="topbar">
+    <ul>
+      <li class="item btn">1</li>
+      <li class="item btn">2</li>
+      <li class="item btn">3</li>
+      <li class="item btn">4</li>
+      <li class="item btn">5</li>
+      <li class="item btn">6</li>
+    </ul>
+    <button id="peek" class="btn">fan again</button>
+  </div>
+  <div id="my-card-view">
+    <div class="">
+      <div class="in">
+        <div class="overlay">
+          <h1>One</h1>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="in">
+        <div class="overlay">
+          <h1>Two</h1>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="in">
+        <div class="overlay">
+          <h1>Three</h1>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="in">
+        <div class="overlay">
+          <h1>Four</h1>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="in">
+        <div class="overlay">
+          <h1>Five</h1>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="in">
+        <div class="overlay">
+          <h1>Six</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="bottombar"><span>Use fast device + modern browser</span>&nbsp;|&nbsp;
+    Built <span class="version">?</span>&nbsp;|&nbsp;
+    <a href="http://github.com/AndersDJohnson/">github</a>
+  </div>
+</body>
+<div id="scripts">
+  <script src="../components/jquery/jquery.js"></script>
+  <!--script(src="../components/jQuery-Animate-Enhanced/scripts/src/jquery.animate-enhanced.js")-->
+  <script src="../components/jquery-easing/jquery.easing.js"></script>
+  <script src="../components/jquery-dotimeout/jquery.ba-dotimeout.js"></script>
+  <script src="../components/jquery-throttle-debounce/jquery.ba-throttle-debounce.js"></script>
+  <!--script(src="../components/jquery-hoverIntent/jquery.hoverIntent.js")-->
+  <script src="../components/jquery-touchswipe/jquery.touchSwipe.js"></script>
+  <script src="../components/lorem/src/library/lorem.js"></script>
+  <script src="../vendor/rAF.js"></script>
+  <script src="../components/jquery-requestAnimationFrame/src/jquery.requestAnimationFrame.js"></script>
+  <script src="./scripts/CardView.js"></script>
+  <script src="./scripts/main.js"></script>
+</div>

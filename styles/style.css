@@ -1,27 +1,94 @@
 
 /* line 1 : /home/anders/Dropbox/Code/book/node_modules/stylus/lib/functions/index.styl */
 
-/* line 1 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
+/* line 13 : /home/anders/Dropbox/Code/book/node_modules/nib/lib/nib/index.styl */
+
+/* line 2 : /home/anders/Dropbox/Code/book/node_modules/nib/lib/nib/border.styl */
+
+/* line 2 : /home/anders/Dropbox/Code/book/node_modules/nib/lib/nib/clearfix.styl */
+
+/* line 2 : /home/anders/Dropbox/Code/book/node_modules/nib/lib/nib/color-image.styl */
+
+/* line 6 : /home/anders/Dropbox/Code/book/node_modules/nib/lib/nib/flex.styl */
+
+/* line 154 : /home/anders/Dropbox/Code/book/node_modules/nib/lib/nib/gradients.styl */
+
+/* line 154 : /home/anders/Dropbox/Code/book/node_modules/nib/lib/nib/config.styl */
+
+/* line 2 : /home/anders/Dropbox/Code/book/node_modules/nib/lib/nib/iconic.styl */
+
+/* line 2 : /home/anders/Dropbox/Code/book/node_modules/nib/lib/nib/image.styl */
+
+/* line 15 : /home/anders/Dropbox/Code/book/node_modules/nib/lib/nib/overflow.styl */
+
+/* line 3 : /home/anders/Dropbox/Code/book/node_modules/nib/lib/nib/positions.styl */
+
+/* line 3 : /home/anders/Dropbox/Code/book/node_modules/nib/lib/nib/reset.styl */
+
+/* line 5 : /home/anders/Dropbox/Code/book/node_modules/nib/lib/nib/text/index.styl */
+
+/* line 2 : /home/anders/Dropbox/Code/book/node_modules/nib/lib/nib/text/aliases.styl */
+
+/* line 2 : /home/anders/Dropbox/Code/book/node_modules/nib/lib/nib/text/ellipsis.styl */
+
+/* line 11 : /home/anders/Dropbox/Code/book/node_modules/nib/lib/nib/text/hide-text.styl */
+
+/* line 9 : /home/anders/Dropbox/Code/book/node_modules/nib/lib/nib/text/replace-text.styl */
+
+/* line 557 : /home/anders/Dropbox/Code/book/node_modules/nib/lib/nib/vendor.styl */
+
+/* line 557 : /home/anders/Dropbox/Code/book/node_modules/nib/lib/nib/config.styl */
+
+/* line 6 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 4 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
+/* line 9 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
 html,
 body {
   font-family: sans-serif;
-  background: #888;
+  background: #111;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-/* line 12 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
+/* line 17 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
 html {
   overflow-y: scroll;
 }
 
 /* line 20 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
+body {
+  padding-top: 48px;
+  font-size: 14px;
+}
+
+/* line 25 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
+#bottombar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  height: 36px;
+  width: 100%;
+  background: #444;
+  color: #fff;
+  font-size: 10px;
+  line-height: 36px;
+  text-align: center;
+}
+
+/* line 39 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
+#bottombar a {
+  color: #ff0;
+  font-weight: bold;
+}
+
+/* line 44 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
 #topbar {
   position: fixed;
   top: 0;
@@ -32,97 +99,102 @@ html {
   background: #444;
 }
 
-/* line 29 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
+/* line 54 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
+#topbar * {
+  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+  -webkit-focus-ring-color: rgba(0,0,0,0) !important;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 60 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
+#topbar .label {
+  float: left;
+  color: #fff;
+font-size
+  height: 36px;
+  line-height: 36px;
+  margin: 4px;
+  font-size: 12px;
+}
+
+/* line 69 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
+#topbar button#peek {
+  visibility: hidden;
+}
+
+/* line 72 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
+#topbar .btn,
+#topbar ul li.btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  float: left;
+  border: 0;
+  min-width: 2em;
+  line-height: 36px;
+  height: 36px;
+  margin: 4px 2px 0;
+  padding: 0 2px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #333;
+  -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ccc), color-stop(1, #666));
+  background: -webkit-linear-gradient(top, #ccc 0%, #666 100%);
+  background: -moz-linear-gradient(top, #ccc 0%, #666 100%);
+  background: -o-linear-gradient(top, #ccc 0%, #666 100%);
+  background: -ms-linear-gradient(top, #ccc 0%, #666 100%);
+  background: linear-gradient(top, #ccc 0%, #666 100%);
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+}
+
+/* line 91 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
+#topbar .btn:hover,
+#topbar ul li.btn:hover {
+  background: #666;
+}
+
+/* line 94 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
 #topbar ul {
   padding: 0;
   margin: 0;
 }
 
-/* line 32 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
+/* line 97 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
 #topbar ul li {
-  display: block;
-  float: left;
   margin: 0;
-  padding: 0 4px;
-  height: 48px;
-  line-height: 48px;
-  min-width: 64px;
-  border-left: 2px solid #666;
-  text-align: center;
-  color: #fff;
-}
-
-/* line 44 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
-#topbar ul li:hover {
-  background: #666;
-}
-
-/* line 47 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
-#menu {
-  display: none;
-  position: fixed;
-  left: 0;
-  width: 200px;
-  padding-top: 100px;
-  z-index: 8;
-  background: #444;
-  height: 100%;
-}
-
-/* line 57 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
-#menu ul {
   padding: 0;
-  margin: 0;
 }
 
-/* line 60 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
-#menu ul li {
-  display: block;
-  padding: 8px 2px;
-  margin: 2px;
-  margin-left: 20px;
-  border-left: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  color: #fff;
-}
-
-/* line 68 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
-#menu ul li:hover {
-  background: #666;
-}
-
-/* line 71 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
+/* line 101 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
 #my-card-view {
-  margin-top: 48px;
+  display: none;
 }
 
-/* line 76 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
+/* line 106 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
+#my-card-view.card-view-not-fullscreen {
+  position: absolute;
+  height: 300px;
+  width: 600px;
+  left: 150px;
+  top: 60px;
+}
+
+/* line 113 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
 .card {
   font-size: 2em;
   padding: 20px;
   border: 2px solid #000;
-  box-shadow: 0 0 16px #000;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-}
-
-/* line 87 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
-.arrow {
-  position: fixed;
-  z-index: 100;
-  top: 50%;
-  background: #000;
-  color: #fff;
-  font-size: 36px;
-  padding: 6px;
-}
-
-/* line 96 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
-.arrow.arrow-left {
-  left: 0;
-}
-
-/* line 99 : /home/anders/Dropbox/Code/book/src/styles/style.styl */
-.arrow.arrow-right {
-  right: 0;
+  -webkit-box-shadow: -4px -4px 16px rgba(0,0,0,0.75);
+  box-shadow: -4px -4px 16px rgba(0,0,0,0.75);
+  background: #fff;
 }
