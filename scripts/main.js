@@ -109,7 +109,7 @@
     }
     window.$e = $element;
     window.cv = $e.cardView('instance');
-    version = '18:18:16';
+    version = '18:28:06';
     return $('.version').text(version);
   });
 
