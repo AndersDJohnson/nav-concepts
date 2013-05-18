@@ -1,0 +1,15 @@
+{
+  "name": "book",
+  "version": "0.0.0",
+  "dependencies": {
+    "jQuery-Animate-Enhanced": "benbarnett/jQuery-Animate-Enhanced",
+    "jquery-easing": "~1.3.0",
+    "lorem": "shyiko/lorem",
+    "jquery": "~2.0.0",
+    "jquery-dotimeout": "cowboy/jquery-dotimeout",
+    "jquery-hoverIntent": "latest",
+    "jquery-throttle-debounce": "latest",
+    "jquery-requestAnimationFrame": "~0.1.2",
+    "jquery-touchswipe": "mattbryson/TouchSwipe-Jquery-Plugin#~1.6.4"
+  }
+}

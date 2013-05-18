@@ -1,0 +1,46 @@
+{
+    "name": "lorem",
+    "description": "Filler text generator compatible with Node.js, Require.js and plain-old &lt;script/&gt;.",
+    "version": "0.4.0",
+    "homepage": "https://github.com/shyiko/lorem",
+    "author": {
+        "name": "Stanley Shyiko",
+        "email": "stanley.shyiko@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/shyiko/lorem.git"
+    },
+    "bugs": {
+        "url": "https://github.com/shyiko/lorem/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/shyiko/lorem/blob/master/mit.license"
+        }
+    ],
+    "main": "src/library/lorem",
+    "engines": {
+        "node": ">= 0.6.0"
+    },
+    "optionalDependencies": {
+        "jquery": "~1.7.2"
+    },
+    "devDependencies": {
+        "grunt": "~0.3.11"
+    },
+    "scripts": {
+        "test": "grunt travis --verbose"
+    },
+    "keywords": ["lorem", "ipsum", "filler", "placeholder", "jquery"],
+    "jam": {
+        "main": "src/library/lorem.js",
+        "include": ["src/library/lorem.js"],
+        "dependencies": {
+            "jquery": ">=1.6.0"
+        }
+    },
+    "github": "https://github.com/shyiko/lorem",
+    "categories": ["UI"]
+}
