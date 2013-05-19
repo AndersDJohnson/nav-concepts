@@ -1,0 +1,25 @@
+{
+  "name": "nav-concepts",
+  "version": "0.1.0",
+  "description": "Start of some navigation concepts. See demo.",
+  "scripts": {},
+  "repository": "",
+  "author": "Anders D. Johnson < AndersDJohnson atsign gmail dot com >",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.4.3",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-stylus": "~0.5.0",
+    "grunt-contrib-jade": "~0.6.0",
+    "grunt-text-replace": "~0.3.2",
+    "grunt-load": "~0.1.0",
+    "coffee-script": "~1.6.2",
+    "grunt-contrib-jade": "~0.6.0",
+    "serve": "~1.2.0",
+    "stylus": "~0.32.1",
+    "nib": "~0.9.1"
+  }
+}
