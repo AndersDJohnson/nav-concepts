@@ -32,7 +32,7 @@
   };
 
   $(function() {
-    var $cards, $element, $menu, $peekBtn, $topbar, cv, swipe, version;
+    var $cards, $element, $menu, $peekBtn, $topbar, cv, meta, swipe;
 
     $menu = $('#menu');
     $topbar = $('#topbar');
@@ -58,7 +58,7 @@
     $element.on('cards.activate.complete', function(e) {
       return $peekBtn.css('visibility', 'visible');
     });
-    $element.on('cards.chnagestate', function(e, state) {
+    $element.on('cards.changestate', function(e, state) {
       if (state === 'peeking') {
         return $peekBtn.css('visibility', 'hidden');
       }
@@ -109,8 +109,8 @@
     }
     window.$e = $element;
     window.cv = $e.cardView('instance');
-    version = '18:28:06';
-    return $('.version').text(version);
+    meta = $.parseJSON("{\"timestamp\":\"2013-05-18T19:32:39\"}");
+    return $('.timestamp').text(meta.timestamp);
   });
 
 }).call(this);
